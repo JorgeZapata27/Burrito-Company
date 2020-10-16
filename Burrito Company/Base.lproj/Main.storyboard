@@ -3591,6 +3591,12 @@ deine Emailadresse.</string>
                                 <color key="textColor" name="primaryText"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PE-QW-Exn">
+                                <rect key="frame" x="0.0" y="783" width="414" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -3598,7 +3604,9 @@ deine Emailadresse.</string>
                             <constraint firstItem="BU3-Xt-ZQ4" firstAttribute="centerX" secondItem="5oe-tX-nFL" secondAttribute="centerX" id="2O0-Ej-U02"/>
                             <constraint firstItem="2dj-gs-3hc" firstAttribute="trailing" secondItem="Byr-X4-AUG" secondAttribute="trailing" constant="20" id="4Z0-s4-psJ"/>
                             <constraint firstItem="BU3-Xt-ZQ4" firstAttribute="top" secondItem="vDH-WI-49b" secondAttribute="bottom" constant="20" id="5C7-Vz-JOu"/>
+                            <constraint firstItem="0PE-QW-Exn" firstAttribute="leading" secondItem="2dj-gs-3hc" secondAttribute="leading" id="6ek-4t-sW8"/>
                             <constraint firstItem="mit-47-MRH" firstAttribute="leading" secondItem="2dj-gs-3hc" secondAttribute="leading" constant="20" id="6v3-Qe-HnA"/>
+                            <constraint firstItem="2dj-gs-3hc" firstAttribute="trailing" secondItem="0PE-QW-Exn" secondAttribute="trailing" id="Aty-po-tRO"/>
                             <constraint firstItem="2dj-gs-3hc" firstAttribute="trailing" secondItem="mit-47-MRH" secondAttribute="trailing" constant="20" id="CaO-XO-0JC"/>
                             <constraint firstItem="lrZ-Ve-RLE" firstAttribute="top" secondItem="2dj-gs-3hc" secondAttribute="top" constant="-50" id="HNm-t2-642"/>
                             <constraint firstItem="2dj-gs-3hc" firstAttribute="trailing" secondItem="lrZ-Ve-RLE" secondAttribute="trailing" id="QTc-Zv-Ggj"/>
@@ -3607,12 +3615,17 @@ deine Emailadresse.</string>
                             <constraint firstItem="vDH-WI-49b" firstAttribute="leading" secondItem="2dj-gs-3hc" secondAttribute="leading" id="ebe-Iq-63H"/>
                             <constraint firstItem="2dj-gs-3hc" firstAttribute="bottom" secondItem="Byr-X4-AUG" secondAttribute="bottom" constant="90" id="ho3-zb-wJr"/>
                             <constraint firstItem="2dj-gs-3hc" firstAttribute="trailing" secondItem="vDH-WI-49b" secondAttribute="trailing" id="r4C-zC-lpf"/>
+                            <constraint firstItem="0PE-QW-Exn" firstAttribute="top" secondItem="mit-47-MRH" secondAttribute="bottom" id="rQE-Lm-qZz"/>
                             <constraint firstItem="lrZ-Ve-RLE" firstAttribute="leading" secondItem="2dj-gs-3hc" secondAttribute="leading" id="trF-fP-kGs"/>
                             <constraint firstItem="Byr-X4-AUG" firstAttribute="leading" secondItem="2dj-gs-3hc" secondAttribute="leading" constant="20" id="vKy-r3-yNG"/>
+                            <constraint firstItem="2dj-gs-3hc" firstAttribute="bottom" secondItem="0PE-QW-Exn" secondAttribute="bottom" id="zUb-fz-oZJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2dj-gs-3hc"/>
                     </view>
                     <navigationItem key="navigationItem" id="oZR-BA-4yI"/>
+                    <connections>
+                        <outlet property="datumLabel" destination="0PE-QW-Exn" id="9v8-93-K8w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WvY-Gq-ndu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

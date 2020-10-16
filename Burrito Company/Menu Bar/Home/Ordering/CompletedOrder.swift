@@ -11,9 +11,15 @@ import UIKit
 class CompletedOrder: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var order = [OrderObject]()
+    
+    @IBOutlet var datumLabel : UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+         
+        let formatter3 = DateFormatter()
+        formatter3.dateFormat = "HH:mm E, d MMM y"
+        self.datumLabel!.text! = formatter3.string(from: Date())
 
         // Do any additional setup after loading the view.
     }
