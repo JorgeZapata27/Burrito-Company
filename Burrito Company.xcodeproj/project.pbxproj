@@ -3,27 +3,108 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78AC4AA025397BBD0011BD8E /* OrderManagementController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC4A9F25397BBD0011BD8E /* OrderManagementController.swift */; };
 		78CE51B825385C2600806C70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51B725385C2600806C70 /* AppDelegate.swift */; };
 		78CE51BA25385C2600806C70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51B925385C2600806C70 /* SceneDelegate.swift */; };
-		78CE51BC25385C2600806C70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51BB25385C2600806C70 /* ViewController.swift */; };
 		78CE51BF25385C2600806C70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78CE51BD25385C2600806C70 /* Main.storyboard */; };
 		78CE51C125385C2A00806C70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78CE51C025385C2A00806C70 /* Assets.xcassets */; };
 		78CE51C425385C2A00806C70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78CE51C225385C2A00806C70 /* LaunchScreen.storyboard */; };
+		78CE51F825386C2700806C70 /* OnboardingScreen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51CC25386C2600806C70 /* OnboardingScreen2.swift */; };
+		78CE51F925386C2700806C70 /* OnboardingScreen1Nav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51CD25386C2600806C70 /* OnboardingScreen1Nav.swift */; };
+		78CE51FA25386C2700806C70 /* OnboardingScreen3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51CE25386C2600806C70 /* OnboardingScreen3.swift */; };
+		78CE51FB25386C2700806C70 /* OnboardingScreen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51CF25386C2600806C70 /* OnboardingScreen1.swift */; };
+		78CE51FC25386C2700806C70 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51D125386C2600806C70 /* GlobalVariables.swift */; };
+		78CE51FD25386C2700806C70 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51D525386C2600806C70 /* ForgotPassword.swift */; };
+		78CE51FE25386C2700806C70 /* ForgotSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51D625386C2600806C70 /* ForgotSuccess.swift */; };
+		78CE51FF25386C2700806C70 /* Sign In Nav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51D825386C2600806C70 /* Sign In Nav.swift */; };
+		78CE520025386C2700806C70 /* Sign Up Nav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51D925386C2600806C70 /* Sign Up Nav.swift */; };
+		78CE520125386C2700806C70 /* Sign In.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51DA25386C2600806C70 /* Sign In.swift */; };
+		78CE520225386C2700806C70 /* Sign Up.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51DB25386C2600806C70 /* Sign Up.swift */; };
+		78CE520325386C2700806C70 /* HomeMenuPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51DE25386C2700806C70 /* HomeMenuPage.swift */; };
+		78CE520425386C2700806C70 /* CategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51E025386C2700806C70 /* CategoryController.swift */; };
+		78CE520525386C2700806C70 /* HomeCategoryMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51E125386C2700806C70 /* HomeCategoryMenu.swift */; };
+		78CE520625386C2700806C70 /* AddItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51E325386C2700806C70 /* AddItemController.swift */; };
+		78CE520725386C2700806C70 /* CompletedOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51E425386C2700806C70 /* CompletedOrder.swift */; };
+		78CE520825386C2700806C70 /* OrderListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51E525386C2700806C70 /* OrderListController.swift */; };
+		78CE520925386C2700806C70 /* SelectPaymentAndProceed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51E625386C2700806C70 /* SelectPaymentAndProceed.swift */; };
+		78CE520A25386C2700806C70 /* OrderMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51E725386C2700806C70 /* OrderMainCell.swift */; };
+		78CE520B25386C2700806C70 /* HomeOrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51E825386C2700806C70 /* HomeOrderController.swift */; };
+		78CE520C25386C2700806C70 /* BullExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51E925386C2700806C70 /* BullExample.swift */; };
+		78CE520D25386C2700806C70 /* OrderObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51EA25386C2700806C70 /* OrderObject.swift */; };
+		78CE520E25386C2700806C70 /* HomeMenuMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51EB25386C2700806C70 /* HomeMenuMainCell.swift */; };
+		78CE520F25386C2700806C70 /* HomeScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51ED25386C2700806C70 /* HomeScanView.swift */; };
+		78CE521025386C2700806C70 /* HomeRewardsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51EE25386C2700806C70 /* HomeRewardsPage.swift */; };
+		78CE521125386C2700806C70 /* HomeProfileMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51F025386C2700806C70 /* HomeProfileMainCell.swift */; };
+		78CE521225386C2700806C70 /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51F225386C2700806C70 /* AboutUs.swift */; };
+		78CE521325386C2700806C70 /* AboutDeveloper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51F325386C2700806C70 /* AboutDeveloper.swift */; };
+		78CE521425386C2700806C70 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51F425386C2700806C70 /* Support.swift */; };
+		78CE521525386C2700806C70 /* ChangePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51F525386C2700806C70 /* ChangePassword.swift */; };
+		78CE521625386C2700806C70 /* HomeProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51F625386C2700806C70 /* HomeProfilePage.swift */; };
+		78CE521725386C2700806C70 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE51F725386C2700806C70 /* MainTabBarController.swift */; };
+		78CE521925386C4D00806C70 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 78CE521825386C4D00806C70 /* art.scnassets */; };
+		78CE521B25386CCC00806C70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78CE521A25386CCC00806C70 /* GoogleService-Info.plist */; };
+		78CE521E2538886D00806C70 /* AddDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE521D2538886D00806C70 /* AddDrink.swift */; };
+		78CE522025388B2500806C70 /* BurritoStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE521F25388B2500806C70 /* BurritoStyle.swift */; };
+		78CE522225388BB100806C70 /* BurritoProtein.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE522125388BB100806C70 /* BurritoProtein.swift */; };
+		78CE522425388FC000806C70 /* BurritoToppings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CE522325388FC000806C70 /* BurritoToppings.swift */; };
+		B19B71C7A175341291E588DA /* Pods_Burrito_Company.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6440B93B4DDE1FBB04DC764 /* Pods_Burrito_Company.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		78AC4A9F25397BBD0011BD8E /* OrderManagementController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderManagementController.swift; sourceTree = "<group>"; };
 		78CE51B425385C2600806C70 /* Burrito Company.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Burrito Company.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78CE51B725385C2600806C70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78CE51B925385C2600806C70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		78CE51BB25385C2600806C70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		78CE51BE25385C2600806C70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78CE51C025385C2A00806C70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78CE51C325385C2A00806C70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78CE51C525385C2A00806C70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78CE51CC25386C2600806C70 /* OnboardingScreen2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingScreen2.swift; sourceTree = "<group>"; };
+		78CE51CD25386C2600806C70 /* OnboardingScreen1Nav.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingScreen1Nav.swift; sourceTree = "<group>"; };
+		78CE51CE25386C2600806C70 /* OnboardingScreen3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingScreen3.swift; sourceTree = "<group>"; };
+		78CE51CF25386C2600806C70 /* OnboardingScreen1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingScreen1.swift; sourceTree = "<group>"; };
+		78CE51D125386C2600806C70 /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		78CE51D525386C2600806C70 /* ForgotPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		78CE51D625386C2600806C70 /* ForgotSuccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotSuccess.swift; sourceTree = "<group>"; };
+		78CE51D825386C2600806C70 /* Sign In Nav.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sign In Nav.swift"; sourceTree = "<group>"; };
+		78CE51D925386C2600806C70 /* Sign Up Nav.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sign Up Nav.swift"; sourceTree = "<group>"; };
+		78CE51DA25386C2600806C70 /* Sign In.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sign In.swift"; sourceTree = "<group>"; };
+		78CE51DB25386C2600806C70 /* Sign Up.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sign Up.swift"; sourceTree = "<group>"; };
+		78CE51DE25386C2700806C70 /* HomeMenuPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeMenuPage.swift; sourceTree = "<group>"; };
+		78CE51E025386C2700806C70 /* CategoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryController.swift; sourceTree = "<group>"; };
+		78CE51E125386C2700806C70 /* HomeCategoryMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCategoryMenu.swift; sourceTree = "<group>"; };
+		78CE51E325386C2700806C70 /* AddItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemController.swift; sourceTree = "<group>"; };
+		78CE51E425386C2700806C70 /* CompletedOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedOrder.swift; sourceTree = "<group>"; };
+		78CE51E525386C2700806C70 /* OrderListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListController.swift; sourceTree = "<group>"; };
+		78CE51E625386C2700806C70 /* SelectPaymentAndProceed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPaymentAndProceed.swift; sourceTree = "<group>"; };
+		78CE51E725386C2700806C70 /* OrderMainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderMainCell.swift; sourceTree = "<group>"; };
+		78CE51E825386C2700806C70 /* HomeOrderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeOrderController.swift; sourceTree = "<group>"; };
+		78CE51E925386C2700806C70 /* BullExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BullExample.swift; sourceTree = "<group>"; };
+		78CE51EA25386C2700806C70 /* OrderObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderObject.swift; sourceTree = "<group>"; };
+		78CE51EB25386C2700806C70 /* HomeMenuMainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeMenuMainCell.swift; sourceTree = "<group>"; };
+		78CE51ED25386C2700806C70 /* HomeScanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScanView.swift; sourceTree = "<group>"; };
+		78CE51EE25386C2700806C70 /* HomeRewardsPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRewardsPage.swift; sourceTree = "<group>"; };
+		78CE51F025386C2700806C70 /* HomeProfileMainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeProfileMainCell.swift; sourceTree = "<group>"; };
+		78CE51F225386C2700806C70 /* AboutUs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
+		78CE51F325386C2700806C70 /* AboutDeveloper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutDeveloper.swift; sourceTree = "<group>"; };
+		78CE51F425386C2700806C70 /* Support.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
+		78CE51F525386C2700806C70 /* ChangePassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePassword.swift; sourceTree = "<group>"; };
+		78CE51F625386C2700806C70 /* HomeProfilePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeProfilePage.swift; sourceTree = "<group>"; };
+		78CE51F725386C2700806C70 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		78CE521825386C4D00806C70 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		78CE521A25386CCC00806C70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		78CE521C2538741F00806C70 /* Burrito Company.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Burrito Company.entitlements"; sourceTree = "<group>"; };
+		78CE521D2538886D00806C70 /* AddDrink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDrink.swift; sourceTree = "<group>"; };
+		78CE521F25388B2500806C70 /* BurritoStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurritoStyle.swift; sourceTree = "<group>"; };
+		78CE522125388BB100806C70 /* BurritoProtein.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurritoProtein.swift; sourceTree = "<group>"; };
+		78CE522325388FC000806C70 /* BurritoToppings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurritoToppings.swift; sourceTree = "<group>"; };
+		9D41D69B39573713B8A16650 /* Pods-Burrito Company.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burrito Company.debug.xcconfig"; path = "Target Support Files/Pods-Burrito Company/Pods-Burrito Company.debug.xcconfig"; sourceTree = "<group>"; };
+		BC29ECCD561F6EC7D79D82FF /* Pods-Burrito Company.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burrito Company.release.xcconfig"; path = "Target Support Files/Pods-Burrito Company/Pods-Burrito Company.release.xcconfig"; sourceTree = "<group>"; };
+		C6440B93B4DDE1FBB04DC764 /* Pods_Burrito_Company.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Burrito_Company.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +112,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B19B71C7A175341291E588DA /* Pods_Burrito_Company.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58B824267883240CAAFA935A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D41D69B39573713B8A16650 /* Pods-Burrito Company.debug.xcconfig */,
+				BC29ECCD561F6EC7D79D82FF /* Pods-Burrito Company.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		78AC4A9E25397BAC0011BD8E /* Order Management */ = {
+			isa = PBXGroup;
+			children = (
+				78AC4A9F25397BBD0011BD8E /* OrderManagementController.swift */,
+			);
+			path = "Order Management";
+			sourceTree = "<group>";
+		};
 		78CE51AB25385C2600806C70 = {
 			isa = PBXGroup;
 			children = (
 				78CE51B625385C2600806C70 /* Burrito Company */,
 				78CE51B525385C2600806C70 /* Products */,
+				58B824267883240CAAFA935A /* Pods */,
+				B5830C693F1502BDBE8CF494 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +157,166 @@
 		78CE51B625385C2600806C70 /* Burrito Company */ = {
 			isa = PBXGroup;
 			children = (
+				78CE521C2538741F00806C70 /* Burrito Company.entitlements */,
 				78CE51B725385C2600806C70 /* AppDelegate.swift */,
 				78CE51B925385C2600806C70 /* SceneDelegate.swift */,
-				78CE51BB25385C2600806C70 /* ViewController.swift */,
+				78CE521825386C4D00806C70 /* art.scnassets */,
+				78CE51D225386C2600806C70 /* Auth */,
+				78CE51D025386C2600806C70 /* Helpers */,
+				78CE51DC25386C2700806C70 /* Menu Bar */,
+				78CE51CB25386C2600806C70 /* Onboarding */,
+				78AC4A9E25397BAC0011BD8E /* Order Management */,
 				78CE51BD25385C2600806C70 /* Main.storyboard */,
 				78CE51C025385C2A00806C70 /* Assets.xcassets */,
 				78CE51C225385C2A00806C70 /* LaunchScreen.storyboard */,
 				78CE51C525385C2A00806C70 /* Info.plist */,
+				78CE521A25386CCC00806C70 /* GoogleService-Info.plist */,
 			);
 			path = "Burrito Company";
+			sourceTree = "<group>";
+		};
+		78CE51CB25386C2600806C70 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				78CE51CC25386C2600806C70 /* OnboardingScreen2.swift */,
+				78CE51CD25386C2600806C70 /* OnboardingScreen1Nav.swift */,
+				78CE51CE25386C2600806C70 /* OnboardingScreen3.swift */,
+				78CE51CF25386C2600806C70 /* OnboardingScreen1.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		78CE51D025386C2600806C70 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				78CE51D125386C2600806C70 /* GlobalVariables.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		78CE51D225386C2600806C70 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				78CE51D325386C2600806C70 /* Sign Up */,
+				78CE51D425386C2600806C70 /* Forgot Password */,
+				78CE51D725386C2600806C70 /* Sign In */,
+				78CE51D825386C2600806C70 /* Sign In Nav.swift */,
+				78CE51D925386C2600806C70 /* Sign Up Nav.swift */,
+				78CE51DA25386C2600806C70 /* Sign In.swift */,
+				78CE51DB25386C2600806C70 /* Sign Up.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		78CE51D325386C2600806C70 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		78CE51D425386C2600806C70 /* Forgot Password */ = {
+			isa = PBXGroup;
+			children = (
+				78CE51D525386C2600806C70 /* ForgotPassword.swift */,
+				78CE51D625386C2600806C70 /* ForgotSuccess.swift */,
+			);
+			path = "Forgot Password";
+			sourceTree = "<group>";
+		};
+		78CE51D725386C2600806C70 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		78CE51DC25386C2700806C70 /* Menu Bar */ = {
+			isa = PBXGroup;
+			children = (
+				78CE51DD25386C2700806C70 /* Home */,
+				78CE51EC25386C2700806C70 /* Rewards */,
+				78CE51EF25386C2700806C70 /* Settings Profile */,
+				78CE51F725386C2700806C70 /* MainTabBarController.swift */,
+			);
+			path = "Menu Bar";
+			sourceTree = "<group>";
+		};
+		78CE51DD25386C2700806C70 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				78CE51DE25386C2700806C70 /* HomeMenuPage.swift */,
+				78CE51DF25386C2700806C70 /* Category Item */,
+				78CE51E225386C2700806C70 /* Ordering */,
+				78CE51EB25386C2700806C70 /* HomeMenuMainCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		78CE51DF25386C2700806C70 /* Category Item */ = {
+			isa = PBXGroup;
+			children = (
+				78CE51E025386C2700806C70 /* CategoryController.swift */,
+				78CE51E125386C2700806C70 /* HomeCategoryMenu.swift */,
+			);
+			path = "Category Item";
+			sourceTree = "<group>";
+		};
+		78CE51E225386C2700806C70 /* Ordering */ = {
+			isa = PBXGroup;
+			children = (
+				78CE51E325386C2700806C70 /* AddItemController.swift */,
+				78CE51E425386C2700806C70 /* CompletedOrder.swift */,
+				78CE51E525386C2700806C70 /* OrderListController.swift */,
+				78CE51E625386C2700806C70 /* SelectPaymentAndProceed.swift */,
+				78CE51E725386C2700806C70 /* OrderMainCell.swift */,
+				78CE51E825386C2700806C70 /* HomeOrderController.swift */,
+				78CE51E925386C2700806C70 /* BullExample.swift */,
+				78CE51EA25386C2700806C70 /* OrderObject.swift */,
+				78CE521D2538886D00806C70 /* AddDrink.swift */,
+				78CE521F25388B2500806C70 /* BurritoStyle.swift */,
+				78CE522125388BB100806C70 /* BurritoProtein.swift */,
+				78CE522325388FC000806C70 /* BurritoToppings.swift */,
+			);
+			path = Ordering;
+			sourceTree = "<group>";
+		};
+		78CE51EC25386C2700806C70 /* Rewards */ = {
+			isa = PBXGroup;
+			children = (
+				78CE51ED25386C2700806C70 /* HomeScanView.swift */,
+				78CE51EE25386C2700806C70 /* HomeRewardsPage.swift */,
+			);
+			path = Rewards;
+			sourceTree = "<group>";
+		};
+		78CE51EF25386C2700806C70 /* Settings Profile */ = {
+			isa = PBXGroup;
+			children = (
+				78CE51F025386C2700806C70 /* HomeProfileMainCell.swift */,
+				78CE51F125386C2700806C70 /* Following Pages */,
+				78CE51F625386C2700806C70 /* HomeProfilePage.swift */,
+			);
+			path = "Settings Profile";
+			sourceTree = "<group>";
+		};
+		78CE51F125386C2700806C70 /* Following Pages */ = {
+			isa = PBXGroup;
+			children = (
+				78CE51F225386C2700806C70 /* AboutUs.swift */,
+				78CE51F325386C2700806C70 /* AboutDeveloper.swift */,
+				78CE51F425386C2700806C70 /* Support.swift */,
+				78CE51F525386C2700806C70 /* ChangePassword.swift */,
+			);
+			path = "Following Pages";
+			sourceTree = "<group>";
+		};
+		B5830C693F1502BDBE8CF494 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6440B93B4DDE1FBB04DC764 /* Pods_Burrito_Company.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +326,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78CE51C825385C2A00806C70 /* Build configuration list for PBXNativeTarget "Burrito Company" */;
 			buildPhases = (
+				C94D7B33F93E8DCDFA35E34E /* [CP] Check Pods Manifest.lock */,
 				78CE51B025385C2600806C70 /* Sources */,
 				78CE51B125385C2600806C70 /* Frameworks */,
 				78CE51B225385C2600806C70 /* Resources */,
+				C15D34A0A06B6B484BCCA1B1 /* [CP] Embed Pods Frameworks */,
+				97C6B5CEEE64425F66F7775D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +381,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				78CE51C425385C2A00806C70 /* LaunchScreen.storyboard in Resources */,
+				78CE521925386C4D00806C70 /* art.scnassets in Resources */,
+				78CE521B25386CCC00806C70 /* GoogleService-Info.plist in Resources */,
 				78CE51C125385C2A00806C70 /* Assets.xcassets in Resources */,
 				78CE51BF25385C2600806C70 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +390,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		97C6B5CEEE64425F66F7775D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Burrito Company/Pods-Burrito Company-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Burrito Company/Pods-Burrito Company-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Burrito Company/Pods-Burrito Company-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C15D34A0A06B6B484BCCA1B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Burrito Company/Pods-Burrito Company-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Burrito Company/Pods-Burrito Company-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Burrito Company/Pods-Burrito Company-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C94D7B33F93E8DCDFA35E34E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Burrito Company-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		78CE51B025385C2600806C70 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78CE51BC25385C2600806C70 /* ViewController.swift in Sources */,
+				78CE520825386C2700806C70 /* OrderListController.swift in Sources */,
+				78CE522425388FC000806C70 /* BurritoToppings.swift in Sources */,
+				78CE521E2538886D00806C70 /* AddDrink.swift in Sources */,
+				78CE51FB25386C2700806C70 /* OnboardingScreen1.swift in Sources */,
+				78CE51FC25386C2700806C70 /* GlobalVariables.swift in Sources */,
+				78CE520725386C2700806C70 /* CompletedOrder.swift in Sources */,
+				78CE521425386C2700806C70 /* Support.swift in Sources */,
+				78CE520A25386C2700806C70 /* OrderMainCell.swift in Sources */,
+				78CE521025386C2700806C70 /* HomeRewardsPage.swift in Sources */,
 				78CE51B825385C2600806C70 /* AppDelegate.swift in Sources */,
+				78CE520225386C2700806C70 /* Sign Up.swift in Sources */,
+				78CE520D25386C2700806C70 /* OrderObject.swift in Sources */,
+				78CE520F25386C2700806C70 /* HomeScanView.swift in Sources */,
+				78CE520925386C2700806C70 /* SelectPaymentAndProceed.swift in Sources */,
+				78CE520425386C2700806C70 /* CategoryController.swift in Sources */,
+				78CE520625386C2700806C70 /* AddItemController.swift in Sources */,
+				78CE522225388BB100806C70 /* BurritoProtein.swift in Sources */,
+				78CE51FA25386C2700806C70 /* OnboardingScreen3.swift in Sources */,
 				78CE51BA25385C2600806C70 /* SceneDelegate.swift in Sources */,
+				78CE521725386C2700806C70 /* MainTabBarController.swift in Sources */,
+				78CE520E25386C2700806C70 /* HomeMenuMainCell.swift in Sources */,
+				78CE51F925386C2700806C70 /* OnboardingScreen1Nav.swift in Sources */,
+				78CE521525386C2700806C70 /* ChangePassword.swift in Sources */,
+				78CE522025388B2500806C70 /* BurritoStyle.swift in Sources */,
+				78AC4AA025397BBD0011BD8E /* OrderManagementController.swift in Sources */,
+				78CE521325386C2700806C70 /* AboutDeveloper.swift in Sources */,
+				78CE520025386C2700806C70 /* Sign Up Nav.swift in Sources */,
+				78CE521125386C2700806C70 /* HomeProfileMainCell.swift in Sources */,
+				78CE520C25386C2700806C70 /* BullExample.swift in Sources */,
+				78CE51F825386C2700806C70 /* OnboardingScreen2.swift in Sources */,
+				78CE520125386C2700806C70 /* Sign In.swift in Sources */,
+				78CE520525386C2700806C70 /* HomeCategoryMenu.swift in Sources */,
+				78CE520325386C2700806C70 /* HomeMenuPage.swift in Sources */,
+				78CE51FF25386C2700806C70 /* Sign In Nav.swift in Sources */,
+				78CE51FE25386C2700806C70 /* ForgotSuccess.swift in Sources */,
+				78CE521225386C2700806C70 /* AboutUs.swift in Sources */,
+				78CE521625386C2700806C70 /* HomeProfilePage.swift in Sources */,
+				78CE51FD25386C2700806C70 /* ForgotPassword.swift in Sources */,
+				78CE520B25386C2700806C70 /* HomeOrderController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +634,10 @@
 		};
 		78CE51C925385C2A00806C70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D41D69B39573713B8A16650 /* Pods-Burrito Company.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Burrito Company/Burrito Company.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZH735L9VC9;
 				INFOPLIST_FILE = "Burrito Company/Info.plist";
@@ -300,8 +654,10 @@
 		};
 		78CE51CA25385C2A00806C70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC29ECCD561F6EC7D79D82FF /* Pods-Burrito Company.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Burrito Company/Burrito Company.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZH735L9VC9;
 				INFOPLIST_FILE = "Burrito Company/Info.plist";
