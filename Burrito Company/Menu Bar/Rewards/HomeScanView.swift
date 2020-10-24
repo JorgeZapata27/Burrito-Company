@@ -36,7 +36,7 @@ class HomeScanView: UIViewController, AVCaptureMetadataOutputObjectsDelegate, AR
             Database.database().reference().child("Users").child(uid).child("points").observeSingleEvent(of: .value, with: { (snapshot) in
                 // Get user value
                 let value = snapshot.value as? NSNumber
-                let newNumber = Int(Int((value!)) + 1)
+                let newNumber = Int(Int((value!)) + 2)
                 Database.database().reference().child("Users").child(uid).child("points").setValue(newNumber)
                 print(String(newNumber))
                 item.manager?.dismissBulletin(animated: true)

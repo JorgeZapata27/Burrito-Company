@@ -24,7 +24,7 @@ class HomeRewardsPage: UIViewController {
     @IBOutlet var actualPoints : UILabel!
     @IBOutlet var middlePoints : UILabel!
     
-    let numberForFreeBurrito = 14
+    let numberForFreeBurrito = 10
 
     override func viewDidLoad() {
         super.viewDidLoad()

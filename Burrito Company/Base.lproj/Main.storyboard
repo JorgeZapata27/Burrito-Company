@@ -2361,16 +2361,16 @@ Scannen Sie unsere Einlösungskarte!</string>
             </objects>
             <point key="canvasLocation" x="9682.608695652174" y="849.77678571428567"/>
         </scene>
-        <!--Sign In-->
+        <!--Anmelden-->
         <scene sceneID="zf3-Jo-aEQ">
             <objects>
                 <viewController id="kzo-3k-ney" customClass="Sign_In" customModule="Burrito_Company" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aoI-eP-jdK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BYr-u8-4aX">
-                                <rect key="frame" x="20" y="314" width="178" height="48"/>
+                                <rect key="frame" x="20" y="454" width="178" height="48"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jco-sY-99l">
                                         <rect key="frame" x="42.5" y="5" width="89" height="38"/>
@@ -2426,7 +2426,7 @@ Scannen Sie unsere Einlösungskarte!</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWy-bL-evK">
-                                <rect key="frame" x="216" y="314" width="178" height="48"/>
+                                <rect key="frame" x="216" y="454" width="178" height="48"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jcm-Wk-UNB">
                                         <rect key="frame" x="35.5" y="5" width="97" height="38"/>
@@ -2482,21 +2482,21 @@ Scannen Sie unsere Einlösungskarte!</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPw-9L-jKp">
-                                <rect key="frame" x="20" y="296" width="145" height="1"/>
+                                <rect key="frame" x="20" y="436" width="145" height="1"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="mI3-ss-iND"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kk1-io-82n">
-                                <rect key="frame" x="249" y="296" width="145" height="1"/>
+                                <rect key="frame" x="249" y="436" width="145" height="1"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="2BJ-BP-6qa"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ug5-xl-iJi">
-                                <rect key="frame" x="0.0" y="286" width="414" height="20"/>
+                                <rect key="frame" x="0.0" y="426" width="414" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="cSg-u5-myL"/>
                                 </constraints>
@@ -2505,7 +2505,7 @@ Scannen Sie unsere Einlösungskarte!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IKp-Uv-bsQ">
-                                <rect key="frame" x="20" y="20" width="374" height="75"/>
+                                <rect key="frame" x="20" y="160" width="374" height="75"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-Mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffZ-4m-AF3">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="25"/>
@@ -2523,6 +2523,9 @@ Scannen Sie unsere Einlösungskarte!</string>
                                         <color key="textColor" name="primaryText"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="kzo-3k-ney" id="54L-O4-EjS"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2538,7 +2541,7 @@ Scannen Sie unsere Einlösungskarte!</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HiX-8B-2U9">
-                                <rect key="frame" x="20" y="110" width="374" height="75"/>
+                                <rect key="frame" x="20" y="250" width="374" height="75"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fcw-cr-azM">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="25"/>
@@ -2556,6 +2559,9 @@ Scannen Sie unsere Einlösungskarte!</string>
                                         <color key="textColor" name="primaryText"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="kzo-3k-ney" id="lzV-2h-epv"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2571,7 +2577,7 @@ Scannen Sie unsere Einlösungskarte!</string>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpE-O2-qHL">
-                                <rect key="frame" x="20" y="230" width="374" height="48"/>
+                                <rect key="frame" x="20" y="370" width="374" height="48"/>
                                 <color key="backgroundColor" name="themeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="ioR-Yo-ydA"/>
@@ -2585,7 +2591,7 @@ Scannen Sie unsere Einlösungskarte!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9CC-ag-bu7">
-                                <rect key="frame" x="0.0" y="422" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="562" width="414" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="0hc-QV-MkK"/>
                                 </constraints>
@@ -2597,7 +2603,7 @@ Scannen Sie unsere Einlösungskarte!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAh-r2-9Qx">
-                                <rect key="frame" x="264" y="193" width="130" height="28"/>
+                                <rect key="frame" x="264" y="333" width="130" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="oQU-DO-7Tf"/>
                                 </constraints>
@@ -2649,7 +2655,7 @@ Scannen Sie unsere Einlösungskarte!</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VSa-r8-Lrz"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Sign In" largeTitleDisplayMode="always" id="FGc-ip-hfx"/>
+                    <navigationItem key="navigationItem" title="Anmelden" largeTitleDisplayMode="always" id="FGc-ip-hfx"/>
                     <connections>
                         <outlet property="email" destination="eav-aJ-mma" id="Y4u-eP-dtd"/>
                         <outlet property="password" destination="f4p-em-erh" id="6iA-au-WX2"/>
@@ -2669,7 +2675,7 @@ Scannen Sie unsere Einlösungskarte!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Phz-n7-ROI">
-                                <rect key="frame" x="20" y="20" width="178" height="48"/>
+                                <rect key="frame" x="20" y="160" width="178" height="48"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Kl-qP-2xT">
                                         <rect key="frame" x="44.5" y="5" width="85" height="38"/>
@@ -2725,7 +2731,7 @@ Scannen Sie unsere Einlösungskarte!</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k7f-RY-Ems">
-                                <rect key="frame" x="216" y="20" width="178" height="48"/>
+                                <rect key="frame" x="216" y="160" width="178" height="48"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dvH-fJ-Q6B">
                                         <rect key="frame" x="37.5" y="5" width="93" height="38"/>
@@ -2781,21 +2787,21 @@ Scannen Sie unsere Einlösungskarte!</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B1h-du-9Bg">
-                                <rect key="frame" x="20" y="98" width="145" height="1"/>
+                                <rect key="frame" x="20" y="238" width="145" height="1"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="BU6-vd-dV4"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7pU-Y8-kMP">
-                                <rect key="frame" x="249" y="98" width="145" height="1"/>
+                                <rect key="frame" x="249" y="238" width="145" height="1"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="J87-hy-oUA"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2K5-e4-rTd">
-                                <rect key="frame" x="0.0" y="88" width="414" height="20"/>
+                                <rect key="frame" x="0.0" y="228" width="414" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="VwE-v2-ntP"/>
                                 </constraints>
@@ -2804,7 +2810,7 @@ Scannen Sie unsere Einlösungskarte!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7v2-Qf-EiJ">
-                                <rect key="frame" x="20" y="113" width="374" height="75"/>
+                                <rect key="frame" x="20" y="253" width="374" height="75"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vollständiger Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYl-g0-kpA">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="25"/>
@@ -2837,7 +2843,7 @@ Scannen Sie unsere Einlösungskarte!</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bre-Wj-O6d">
-                                <rect key="frame" x="20" y="193" width="374" height="75"/>
+                                <rect key="frame" x="20" y="333" width="374" height="75"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-Mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S87-tq-usX">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="25"/>
@@ -2870,7 +2876,7 @@ Scannen Sie unsere Einlösungskarte!</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gsp-3h-TUR">
-                                <rect key="frame" x="20" y="273" width="374" height="75"/>
+                                <rect key="frame" x="20" y="413" width="374" height="75"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passwort" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gti-Q8-QcG">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="25"/>
@@ -2903,7 +2909,7 @@ Scannen Sie unsere Einlösungskarte!</string>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jM-Tt-Xpc">
-                                <rect key="frame" x="20" y="364" width="374" height="48"/>
+                                <rect key="frame" x="20" y="504" width="374" height="48"/>
                                 <color key="backgroundColor" name="themeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Dlz-ap-Zvg"/>
@@ -2917,7 +2923,7 @@ Scannen Sie unsere Einlösungskarte!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sa-bd-rab">
-                                <rect key="frame" x="0.0" y="432" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="572" width="414" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Jbv-uh-WmG"/>
                                 </constraints>
@@ -2929,7 +2935,7 @@ Scannen Sie unsere Einlösungskarte!</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mit Ihrer Anmeldung stimmen Sie zu:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rm3-K9-V3v">
-                                <rect key="frame" x="0.0" y="482" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="622" width="414" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="fma-HH-gfi"/>
                                 </constraints>
@@ -2938,7 +2944,7 @@ Scannen Sie unsere Einlösungskarte!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRd-oJ-l5S">
-                                <rect key="frame" x="0.0" y="505" width="414" height="25"/>
+                                <rect key="frame" x="0.0" y="645" width="414" height="25"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hi-9W-Udg">
                                         <rect key="frame" x="224.5" y="0.0" width="60" height="15"/>
@@ -3078,11 +3084,11 @@ Scannen Sie unsere Einlösungskarte!</string>
             <objects>
                 <viewController id="3h5-9I-R4k" customClass="ForgotSuccess" customModule="Burrito_Company" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G8n-sr-MB7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J2A-zn-JGy">
-                                <rect key="frame" x="152" y="291" width="110" height="110"/>
+                                <rect key="frame" x="152" y="318" width="110" height="110"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎉" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8Y-SS-AdH">
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
@@ -3107,7 +3113,7 @@ Scannen Sie unsere Einlösungskarte!</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-Mail gesendet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEw-e2-vdf">
-                                <rect key="frame" x="0.0" y="85" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="225" width="414" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ven-8V-TGL"/>
                                 </constraints>
@@ -3116,7 +3122,7 @@ Scannen Sie unsere Einlösungskarte!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foN-CS-tWD">
-                                <rect key="frame" x="92" y="481" width="230" height="60"/>
+                                <rect key="frame" x="92" y="508" width="230" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="230" id="FpV-LF-hGX"/>
                                     <constraint firstAttribute="height" constant="60" id="kLh-eB-NjN"/>
@@ -3128,7 +3134,7 @@ deine Emailadresse.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qY5-kg-Ygn">
-                                <rect key="frame" x="20" y="560" width="374" height="48"/>
+                                <rect key="frame" x="20" y="587" width="374" height="48"/>
                                 <color key="backgroundColor" name="themeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="zTR-rq-Wn7"/>
@@ -3173,11 +3179,11 @@ deine Emailadresse.</string>
             <objects>
                 <viewController id="CWm-41-Rww" customClass="ForgotPassword" customModule="Burrito_Company" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IFT-kT-vNU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uM1-2f-fQ3">
-                                <rect key="frame" x="20" y="497" width="374" height="48"/>
+                                <rect key="frame" x="20" y="524" width="374" height="48"/>
                                 <color key="backgroundColor" name="themeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="mHV-QO-7pB"/>
@@ -3192,7 +3198,7 @@ deine Emailadresse.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passwort zurücksetzen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVh-4s-yU9">
-                                <rect key="frame" x="0.0" y="85" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="225" width="414" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="vVD-0w-zBp"/>
                                 </constraints>
@@ -3201,7 +3207,7 @@ deine Emailadresse.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pic-Oq-g3v">
-                                <rect key="frame" x="20" y="406" width="374" height="75"/>
+                                <rect key="frame" x="20" y="433" width="374" height="75"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-Mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ulf-i7-pRO">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="25"/>
@@ -4293,8 +4299,8 @@ deine Emailadresse.</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="FCS-zM-sui"/>
-        <segue reference="1Qb-Jb-YNW"/>
-        <segue reference="oAt-Kd-0Q1"/>
+        <segue reference="2vS-FN-sg8"/>
+        <segue reference="vLK-W1-9fp"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="apple" width="666" height="791"/>
