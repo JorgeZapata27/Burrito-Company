@@ -18,6 +18,15 @@ default_platform(:ios)
 platform :ios do
   desc "Push a new release build to the App Store"
   lane :release do
+    gym(
+      export_method: "app-store",
+      export_options: {
+        provisioningProfiles: {
+          "Jorge-Zapata.Burrito-Company" => "BCProvisioningProfile.mobileprovision"
+        }
+      }
+    )
+    increment_build_number(xcodeproj: "Burrito Company.xcodeproj")
     build_app(workspace: "Burrito Company.xcworkspace", scheme: "Burrito Company")
     upload_to_app_store(skip_metadata: true, skip_screenshots: true)
   end
