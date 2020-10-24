@@ -43,7 +43,7 @@ class HomeProfilePage: UIViewController, UITableViewDelegate, UITableViewDataSou
     func PullData() {
         Database.database().reference().child("Users").child(Auth.auth().currentUser!.uid).child("firstname").observe(.value) { (snapshot) in
             let firstname : String = (snapshot.value as? String)!
-            self.titleNameNav.text! = "Hello, \(firstname)"
+            self.titleNameNav.text! = "Hallo, \(firstname)"
         }
         
         Database.database().reference().child("Users").child(Auth.auth().currentUser!.uid).child("points").observeSingleEvent(of: .value) { (totalPoints) in
