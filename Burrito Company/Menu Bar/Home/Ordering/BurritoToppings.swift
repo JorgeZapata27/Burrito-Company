@@ -190,7 +190,11 @@ class BurritoToppings: UIViewController {
         } else {
             orderObject.priceOfMenuItem = 7.00
         }
-        orderObject.descriptionOfMenuItem = "\(self.burritoType), \(self.burritoProtein), \(self.totalToppings) | \(orderObject.priceOfMenuItem!)€"
+        if self.totalToppings.isEmpty == true {
+            orderObject.descriptionOfMenuItem = "\(self.burritoType), \(self.burritoProtein), Keine Beläge | \(orderObject.priceOfMenuItem!)€"
+        } else {
+            orderObject.descriptionOfMenuItem = "\(self.burritoType), \(self.burritoProtein), \(self.totalToppings) | \(orderObject.priceOfMenuItem!)€"
+        }
         // add to global variable array
         GlobalVariables.orderList.append(orderObject)
         let secondAlert = UIAlertController(title: "Hinzugefügt!", message: "", preferredStyle: .alert)
