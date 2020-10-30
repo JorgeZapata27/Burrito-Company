@@ -139,37 +139,42 @@ class BurritoToppings: UIViewController {
     }
     
     @IBAction func mainButtonPressed(_ sender: UIButton) {
-        self.totalToppings = ""
-        if self.is1S {
-            self.burritoToppings.append("Bohnenmus")
+        if self.is1S == false && self.is2S == false && self.is3S == false && self.is4S == false && self.is5S == false && self.is6S == false && self.is7S == false && self.is8S == false {
+            self.totalToppings = ""
+            completeOrder()
+        } else {
+            self.totalToppings = ""
+            if self.is1S {
+                self.burritoToppings.append("Bohnenmus")
+            }
+            if self.is2S {
+                self.burritoToppings.append("Classic Salsa")
+            }
+            if self.is3S {
+                self.burritoToppings.append("Käse")
+            }
+            if self.is4S {
+                self.burritoToppings.append("Mais")
+            }
+            if self.is5S {
+                self.burritoToppings.append("Sour Cream")
+            }
+            if self.is6S {
+                self.burritoToppings.append("Salat-Mix")
+            }
+            if self.is7S {
+                self.burritoToppings.append("Chili Salsa")
+            }
+            if self.is8S {
+                self.burritoToppings.append("Koriander")
+            }
+            for topping in self.burritoToppings {
+                self.totalToppings = ("\(self.totalToppings), \(topping)")
+            }
+            self.totalToppings.removeFirst()
+            self.totalToppings.removeFirst()
+            completeOrder()
         }
-        if self.is2S {
-            self.burritoToppings.append("Classic Salsa")
-        }
-        if self.is3S {
-            self.burritoToppings.append("Käse")
-        }
-        if self.is4S {
-            self.burritoToppings.append("Mais")
-        }
-        if self.is5S {
-            self.burritoToppings.append("Sour Cream")
-        }
-        if self.is6S {
-            self.burritoToppings.append("Salat-Mix")
-        }
-        if self.is7S {
-            self.burritoToppings.append("Chili Salsa")
-        }
-        if self.is8S {
-            self.burritoToppings.append("Koriander")
-        }
-        for topping in self.burritoToppings {
-            self.totalToppings = ("\(self.totalToppings), \(topping)")
-        }
-        self.totalToppings.removeFirst()
-        self.totalToppings.removeFirst()
-        completeOrder()
     }
     
     func completeOrder() {
